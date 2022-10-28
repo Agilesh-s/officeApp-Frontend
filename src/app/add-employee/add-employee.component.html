@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">EMPLOYEE ID</label>
+                    <input type="text" class="form-control" name="emp_id" [(ngModel)]="emp_id">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">NAME</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">DESIGNATION</label>
+                    <input type="text" class="form-control" name="designation" [(ngModel)]="designation">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">COMPANY NAME</label>
+                    <input type="text" class="form-control" name="company_name" [(ngModel)]="company_name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">DATE OF BIRTH</label>
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="dob">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">GENDER</label>
+                    <select id="" class="form-control" name="gender" [(ngModel)]="gender">
+                        <option value="MALE">MALE</option>
+                        <option value="FEMALE">FEMALE</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">PASSWORD</label>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-primary" (click)="readValues()">REGISTER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
