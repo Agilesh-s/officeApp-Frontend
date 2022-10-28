@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 const appRoutes:Routes=[
   {
@@ -25,6 +27,12 @@ const appRoutes:Routes=[
   },
   {
     path:"addEmployee",component:AddEmployeeComponent
+  },
+  {
+    path:"viewEmployee",component:ViewEmployeeComponent
+  },
+  {
+    path:"searchEmployee",component:SearchEmployeeComponent
   }
 ]
 
@@ -35,7 +43,9 @@ const appRoutes:Routes=[
     AdminLoginComponent,
     NavbarComponent,
     EmployeeLoginComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    ViewEmployeeComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
