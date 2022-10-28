@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes:Routes=[
   {
@@ -23,7 +24,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     AdminDashboardComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
