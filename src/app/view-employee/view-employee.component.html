@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">EMPLOYEE ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">DESIGNATION</th>
+                    <th scope="col">COMPANY NAME</th>
+                    <th scope="col">DATE OF BIRTH</th>
+                    <th scope="col">GENDER</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">PASSWORD</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr *ngFor = "let i of employeeData" >
+                    <td>{{i.emp_id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.company_name}}</td>
+                    <td>{{i.dob}}</td>
+                    <td>{{i.gender}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.password}}</td>
+                    <td><button class="btn btn-danger" (click)="readValues(i.emp_id)">DELETE</button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
